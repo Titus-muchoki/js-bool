@@ -12,9 +12,10 @@
     <p id="demo1"></p>
     <p id="demo2"></p>
     <p id="demo3"></p>
-    <p id="demo4"></p>
+    <p id="demo4"></p>s
     <p id="demo5"></p>
     <p id="demo6"></p>
+    <p id="demo7"></p>
     <script>
         let x = 5;
         x++;
@@ -36,8 +37,14 @@
         let d = 2;
         let f= 3;
         document.getElementById("demo5").innerHTML = d == f;
+
         const cars = ["bmw", "gle", "legacy" ];
+        cars[2] = "demio";
         document.getElementById("demo6").innerHTML = cars[2]
+
+        const person = {firstName:"titus", secondName:"muchoki",age:22};
+        document.getElementById("demo7").innerHTML = person.firstName+ " " +person.secondName,
+        " " +person.age;
     </script>
 
     
